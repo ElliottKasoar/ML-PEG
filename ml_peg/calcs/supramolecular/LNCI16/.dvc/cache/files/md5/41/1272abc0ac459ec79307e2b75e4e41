@@ -1,0 +1,26 @@
+{
+  "uuid": "49e11e0c-147b-4236-8392-d9d49008f841",
+  "run_count": 1,
+  "zntrack_version": "0.8.9",
+  "run_time": 79.627839,
+  "lockfile": {
+    "cmd": "zntrack run calc_LNCI16.LNCI16Benchmark --name mace_mp_0a_LNCI16Benchmark",
+    "params": {
+      "params.yaml": {
+        "mace_mp_0a_LNCI16Benchmark": {
+          "model": {
+            "_cls": "mlipx.nodes.generic_ase.GenericASECalculator",
+            "class_name": "mace_mp",
+            "device": "auto",
+            "kwargs": {
+              "model": "medium"
+            },
+            "module": "mace.calculators",
+            "spec": null
+          },
+          "model_name": "mace_mp_0a"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,91 @@
+schema: '2.0'
+stages:
+  mace_matpes_r2scan_ElementalSlabOxygenAdsorptionBenchmark:
+    cmd: zntrack run 
+      calc_elemental_slab_oxygen_adsorption.ElementalSlabOxygenAdsorptionBenchmark
+      --name mace_matpes_r2scan_ElementalSlabOxygenAdsorptionBenchmark
+    params:
+      params.yaml:
+        mace_matpes_r2scan_ElementalSlabOxygenAdsorptionBenchmark:
+          model:
+            _cls: ml_peg.models.models.GenericASECalc
+            add_d3: false
+            class_name: mace_mp
+            d3_kwargs: {}
+            device: auto
+            kwargs:
+              head: matpes_pbe
+              model: mace-matpes-r2scan-0
+            module: mace.calculators
+            spec:
+          model_name: mace_matpes_r2scan
+    outs:
+    - path: 
+        nodes/mace_matpes_r2scan/ElementalSlabOxygenAdsorptionBenchmark/node-meta.json
+      hash: md5
+      md5: 532bdf38fa99ff505add1c1edc46c4cc
+      size: 898
+  mace_mp_0a_ElementalSlabOxygenAdsorptionBenchmark:
+    cmd: zntrack run 
+      calc_elemental_slab_oxygen_adsorption.ElementalSlabOxygenAdsorptionBenchmark
+      --name mace_mp_0a_ElementalSlabOxygenAdsorptionBenchmark
+    params:
+      params.yaml:
+        mace_mp_0a_ElementalSlabOxygenAdsorptionBenchmark:
+          model:
+            _cls: mlipx.nodes.generic_ase.GenericASECalculator
+            class_name: mace_mp
+            device: auto
+            kwargs:
+              model: medium
+            module: mace.calculators
+            spec:
+          model_name: mace_mp_0a
+    outs:
+    - path: 
+        nodes/mace_mp_0a/ElementalSlabOxygenAdsorptionBenchmark/node-meta.json
+      hash: md5
+      md5: 63efc49efdbb523111a08c0472aa477d
+      size: 776
+  mace_omat_0_ElementalSlabOxygenAdsorptionBenchmark:
+    cmd: zntrack run 
+      calc_elemental_slab_oxygen_adsorption.ElementalSlabOxygenAdsorptionBenchmark
+      --name mace_omat_0_ElementalSlabOxygenAdsorptionBenchmark
+    params:
+      params.yaml:
+        mace_omat_0_ElementalSlabOxygenAdsorptionBenchmark:
+          model:
+            _cls: mlipx.nodes.generic_ase.GenericASECalculator
+            class_name: mace_mp
+            device: auto
+            kwargs:
+              model: medium-omat-0
+            module: mace.calculators
+            spec:
+          model_name: mace_omat_0
+    outs:
+    - path: 
+        nodes/mace_omat_0/ElementalSlabOxygenAdsorptionBenchmark/node-meta.json
+      hash: md5
+      md5: 9a3782a36ab58cfa1120fa06f3f47c21
+      size: 786
+  orb_v3_conservative_inf_omat___ElementalSlabOxygenAdsorptionBenchmark:
+    cmd: zntrack run 
+      calc_elemental_slab_oxygen_adsorption.ElementalSlabOxygenAdsorptionBenchmark
+      --name 
+      orb_v3_conservative_inf_omat___ElementalSlabOxygenAdsorptionBenchmark
+    params:
+      params.yaml:
+        orb_v3_conservative_inf_omat___ElementalSlabOxygenAdsorptionBenchmark:
+          model:
+            _cls: ml_peg.calcs.models.models.OrbCalc
+            device: cpu
+            kwargs: {}
+            name: orb_v3_conservative_inf_omat
+          model_name: orb_v3_conservative_inf_omat__
+    outs:
+    - path: 
+        nodes/orb_v3_conservative_inf_omat__/ElementalSlabOxygenAdsorptionBenchmark/node-meta.json
+      hash: md5
+      md5: 24fcaae3014cbc1a2e504a148a31e729
+      size: 726

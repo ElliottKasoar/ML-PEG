@@ -1,0 +1,20 @@
+cmd: zntrack run calc_LNCI16.LNCI16Benchmark --name 
+  mace_matpes_r2scan_LNCI16Benchmark
+params:
+  params.yaml:
+    mace_matpes_r2scan_LNCI16Benchmark:
+      model:
+        _cls: mlipx.nodes.generic_ase.GenericASECalculator
+        class_name: mace_mp
+        device: auto
+        kwargs:
+          head: matpes_pbe
+          model: mace-matpes-r2scan-0
+        module: mace.calculators
+        spec:
+      model_name: mace_matpes_r2scan
+outs:
+- path: nodes/mace_matpes_r2scan/LNCI16Benchmark/node-meta.json
+  hash: md5
+  md5: c7ef123284a11a3c9ca5aecad52fd073
+  size: 755

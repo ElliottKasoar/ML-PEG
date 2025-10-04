@@ -1,0 +1,97 @@
+schema: '2.0'
+stages:
+  mace_mp_0b3_OC157Benchmark:
+    cmd: zntrack run calc_OC157.OC157Benchmark --name mace_mp_0b3_OC157Benchmark
+    params:
+      params.yaml:
+        mace_mp_0b3_OC157Benchmark:
+          model:
+            _cls: mlipx.nodes.generic_ase.GenericASECalculator
+            class_name: mace_mp
+            device: auto
+            kwargs:
+              model: medium-0b3
+            module: mace.calculators
+            spec:
+          model_name: mace_mp_0b3
+    outs:
+    - path: nodes/mace_mp_0b3/OC157Benchmark/node-meta.json
+      hash: md5
+      md5: 636f739e5e49c6c8ba6a3f22831f4556
+      size: 685
+  mace_matpes_r2scan_OC157Benchmark:
+    cmd: zntrack run calc_OC157.OC157Benchmark --name 
+      mace_matpes_r2scan_OC157Benchmark
+    params:
+      params.yaml:
+        mace_matpes_r2scan_OC157Benchmark:
+          model:
+            _cls: mlipx.nodes.generic_ase.GenericASECalculator
+            class_name: mace_mp
+            device: auto
+            kwargs:
+              head: matpes_pbe
+              model: mace-matpes-r2scan-0
+            module: mace.calculators
+            spec:
+          model_name: mace_matpes_r2scan
+    outs:
+    - path: nodes/mace_matpes_r2scan/OC157Benchmark/node-meta.json
+      hash: md5
+      md5: b40e02232e95a661dfd8c4ad29d621de
+      size: 752
+  mace_omat_0_OC157Benchmark:
+    cmd: zntrack run calc_OC157.OC157Benchmark --name mace_omat_0_OC157Benchmark
+    params:
+      params.yaml:
+        mace_omat_0_OC157Benchmark:
+          model:
+            _cls: mlipx.nodes.generic_ase.GenericASECalculator
+            class_name: mace_mp
+            device: auto
+            kwargs:
+              model: medium-omat-0
+            module: mace.calculators
+            spec:
+          model_name: mace_omat_0
+    outs:
+    - path: nodes/mace_omat_0/OC157Benchmark/node-meta.json
+      hash: md5
+      md5: c8125629059cb95213b35b20f5e9ba2b
+      size: 688
+  orb_v3_conservative_inf_omat___OC157Benchmark:
+    cmd: zntrack run calc_OC157.OC157Benchmark --name 
+      orb_v3_conservative_inf_omat___OC157Benchmark
+    params:
+      params.yaml:
+        orb_v3_conservative_inf_omat___OC157Benchmark:
+          model:
+            _cls: ml_peg.calcs.models.models.OrbCalc
+            device: cpu
+            kwargs: {}
+            name: orb_v3_conservative_inf_omat
+          model_name: orb_v3_conservative_inf_omat__
+    outs:
+    - path: nodes/orb_v3_conservative_inf_omat__/OC157Benchmark/node-meta.json
+      hash: md5
+      md5: f8ddbc8b6913c7da540f71aa7da8baad
+      size: 629
+  mace_mp_0a_OC157Benchmark:
+    cmd: zntrack run calc_OC157.OC157Benchmark --name mace_mp_0a_OC157Benchmark
+    params:
+      params.yaml:
+        mace_mp_0a_OC157Benchmark:
+          model:
+            _cls: mlipx.nodes.generic_ase.GenericASECalculator
+            class_name: mace_mp
+            device: auto
+            kwargs:
+              model: medium
+            module: mace.calculators
+            spec:
+          model_name: mace_mp_0a
+    outs:
+    - path: nodes/mace_mp_0a/OC157Benchmark/node-meta.json
+      hash: md5
+      md5: 1b17d9f862e7b56f0f222cdf26c02ba7
+      size: 678

@@ -5,19 +5,19 @@ mace_mp_0a:
   kwargs:
     model: "medium"
 
-#mace_mp_0b3:
-#  module: mace.calculators
-#  class_name: mace_mp
-#  device: "auto"
-#  kwargs:
-#    model: "medium-0b3"
+mace_mp_0b3:
+  module: mace.calculators
+  class_name: mace_mp
+  device: "auto"
+  kwargs:
+    model: "medium-0b3"
 
-# mace_mpa_0:
-#   module: mace.calculators
-#   class_name: mace_mp
-#   device: "auto"
-#   kwargs:
-#     model: "medium-mpa-0"
+mace_mpa_0:
+  module: mace.calculators
+  class_name: mace_mp
+  device: "auto"
+  kwargs:
+    model: "medium-mpa-0"
 
 mace_omat_0:
   module: mace.calculators

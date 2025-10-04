@@ -1,0 +1,65 @@
+schema: '2.0'
+stages:
+  orb_v3_conservative_inf_omat___S24Benchmark:
+    cmd: zntrack run calc_S24.S24Benchmark --name 
+      orb_v3_conservative_inf_omat___S24Benchmark
+    params:
+      params.yaml:
+        orb_v3_conservative_inf_omat___S24Benchmark:
+          model:
+            _cls: ml_peg.models.models.OrbCalc
+            add_d3: false
+            d3_kwargs: {}
+            device: cpu
+            kwargs: {}
+            name: orb_v3_conservative_inf_omat
+          model_name: orb_v3_conservative_inf_omat__
+    outs:
+    - path: nodes/orb_v3_conservative_inf_omat__/S24Benchmark/node-meta.json
+      hash: md5
+      md5: 72a870bf1015892aef47954458bdfed8
+      size: 672
+  mace_matpes_r2scan_S24Benchmark:
+    cmd: zntrack run calc_S24.S24Benchmark --name 
+      mace_matpes_r2scan_S24Benchmark
+    params:
+      params.yaml:
+        mace_matpes_r2scan_S24Benchmark:
+          model:
+            _cls: ml_peg.models.models.GenericASECalc
+            add_d3: false
+            class_name: mace_mp
+            d3_kwargs: {}
+            device: auto
+            kwargs:
+              head: matpes_pbe
+              model: mace-matpes-r2scan-0
+            module: mace.calculators
+            spec:
+          model_name: mace_matpes_r2scan
+    outs:
+    - path: nodes/mace_matpes_r2scan/S24Benchmark/node-meta.json
+      hash: md5
+      md5: 27a665d5a91ef664ccef73a17e5af7a4
+      size: 792
+  mace_omat_0_S24Benchmark:
+    cmd: zntrack run calc_S24.S24Benchmark --name mace_omat_0_S24Benchmark
+    params:
+      params.yaml:
+        mace_omat_0_S24Benchmark:
+          model:
+            _cls: ml_peg.models.models.GenericASECalc
+            add_d3: false
+            class_name: mace_mp
+            d3_kwargs: {}
+            device: auto
+            kwargs:
+              model: medium-omat-0
+            module: mace.calculators
+            spec:
+          model_name: mace_omat_0
+    outs:
+    - path: nodes/mace_omat_0/S24Benchmark/node-meta.json
+      hash: md5
+      md5: b3b42d5010fdf794f29ee8ff186eca24
+      size: 728

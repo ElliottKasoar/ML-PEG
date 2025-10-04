@@ -12,7 +12,7 @@ from ml_peg.app.utils.build_callbacks import (
     struct_from_scatter,
 )
 from ml_peg.app.utils.load import read_plot
-from ml_peg.calcs.models.models import MODELS
+from ml_peg.models.models import MODELS
 
 BENCHMARK_NAME = "S24"
 DATA_PATH = APP_ROOT / "data" / "surfaces" / "S24"

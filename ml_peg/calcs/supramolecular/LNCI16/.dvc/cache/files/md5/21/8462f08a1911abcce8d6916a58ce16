@@ -1,0 +1,27 @@
+{
+  "uuid": "84039929-3f74-4f38-a82b-2a760ae35149",
+  "run_count": 1,
+  "zntrack_version": "0.8.9",
+  "run_time": 94.195238,
+  "lockfile": {
+    "cmd": "zntrack run calc_LNCI16.LNCI16Benchmark --name mace_matpes_r2scan_LNCI16Benchmark",
+    "params": {
+      "params.yaml": {
+        "mace_matpes_r2scan_LNCI16Benchmark": {
+          "model": {
+            "_cls": "mlipx.nodes.generic_ase.GenericASECalculator",
+            "class_name": "mace_mp",
+            "device": "auto",
+            "kwargs": {
+              "head": "matpes_pbe",
+              "model": "mace-matpes-r2scan-0"
+            },
+            "module": "mace.calculators",
+            "spec": null
+          },
+          "model_name": "mace_matpes_r2scan"
+        }
+      }
+    }
+  }
+}

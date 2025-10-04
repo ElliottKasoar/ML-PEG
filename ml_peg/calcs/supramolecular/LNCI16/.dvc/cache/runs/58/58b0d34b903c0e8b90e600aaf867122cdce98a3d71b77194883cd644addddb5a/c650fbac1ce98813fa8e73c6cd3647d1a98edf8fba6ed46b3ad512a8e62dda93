@@ -1,0 +1,18 @@
+cmd: zntrack run calc_LNCI16.LNCI16Benchmark --name mace_omat_0_LNCI16Benchmark
+params:
+  params.yaml:
+    mace_omat_0_LNCI16Benchmark:
+      model:
+        _cls: mlipx.nodes.generic_ase.GenericASECalculator
+        class_name: mace_mp
+        device: auto
+        kwargs:
+          model: medium-omat-0
+        module: mace.calculators
+        spec:
+      model_name: mace_omat_0
+outs:
+- path: nodes/mace_omat_0/LNCI16Benchmark/node-meta.json
+  hash: md5
+  md5: 1fd1716807dfe8b27c4f588816e31677
+  size: 691

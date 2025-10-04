@@ -1,0 +1,22 @@
+{
+  "uuid": "ef90b684-efb7-4849-9759-126b90c1dbb2",
+  "run_count": 1,
+  "zntrack_version": "0.8.9",
+  "run_time": 2.74647,
+  "lockfile": {
+    "cmd": "zntrack run calc_LNCI16.LNCI16Benchmark --name orb_v3_conservative_inf_omat___LNCI16Benchmark",
+    "params": {
+      "params.yaml": {
+        "orb_v3_conservative_inf_omat___LNCI16Benchmark": {
+          "model": {
+            "_cls": "ml_peg.calcs.models.models.OrbCalc",
+            "device": "cpu",
+            "kwargs": {},
+            "name": "orb_v3_conservative_inf_omat"
+          },
+          "model_name": "orb_v3_conservative_inf_omat__"
+        }
+      }
+    }
+  }
+}

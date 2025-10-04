@@ -1,0 +1,17 @@
+stages:
+  mace_matpes_r2scan_ElementalSlabOxygenAdsorptionBenchmark:
+    cmd: zntrack run calc_elemental_slab_oxygen_adsorption.ElementalSlabOxygenAdsorptionBenchmark
+      --name mace_matpes_r2scan_ElementalSlabOxygenAdsorptionBenchmark
+    metrics:
+    - nodes/mace_matpes_r2scan/ElementalSlabOxygenAdsorptionBenchmark/node-meta.json:
+        cache: true
+    params:
+    - mace_matpes_r2scan_ElementalSlabOxygenAdsorptionBenchmark
+  mace_omat_0_ElementalSlabOxygenAdsorptionBenchmark:
+    cmd: zntrack run calc_elemental_slab_oxygen_adsorption.ElementalSlabOxygenAdsorptionBenchmark
+      --name mace_omat_0_ElementalSlabOxygenAdsorptionBenchmark
+    metrics:
+    - nodes/mace_omat_0/ElementalSlabOxygenAdsorptionBenchmark/node-meta.json:
+        cache: true
+    params:
+    - mace_omat_0_ElementalSlabOxygenAdsorptionBenchmark

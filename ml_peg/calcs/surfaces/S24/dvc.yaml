@@ -1,0 +1,8 @@
+stages:
+  orb_v3_conservative_inf_omat___S24Benchmark:
+    cmd: zntrack run calc_S24.S24Benchmark --name orb_v3_conservative_inf_omat___S24Benchmark
+    metrics:
+    - nodes/orb_v3_conservative_inf_omat__/S24Benchmark/node-meta.json:
+        cache: true
+    params:
+    - orb_v3_conservative_inf_omat___S24Benchmark

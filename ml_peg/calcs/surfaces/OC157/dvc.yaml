@@ -1,0 +1,15 @@
+stages:
+  mace_matpes_r2scan_OC157Benchmark:
+    cmd: zntrack run calc_OC157.OC157Benchmark --name mace_matpes_r2scan_OC157Benchmark
+    metrics:
+    - nodes/mace_matpes_r2scan/OC157Benchmark/node-meta.json:
+        cache: true
+    params:
+    - mace_matpes_r2scan_OC157Benchmark
+  mace_omat_0_OC157Benchmark:
+    cmd: zntrack run calc_OC157.OC157Benchmark --name mace_omat_0_OC157Benchmark
+    metrics:
+    - nodes/mace_omat_0/OC157Benchmark/node-meta.json:
+        cache: true
+    params:
+    - mace_omat_0_OC157Benchmark
